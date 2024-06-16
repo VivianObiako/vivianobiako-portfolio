@@ -4,6 +4,7 @@ import Github from "assets/icons/Github";
 import Profile from "assets/images/memoji.png"
 import Email from "assets/icons/Email";
 import ExternalIcon from "assets/icons/ExternalIcon";
+import LinkedInIcon from "assets/icons/LinkedInIcon";
 
 const Footer = () => {
     const { isDark, setIsDark } = useThemeContext();
@@ -35,6 +36,16 @@ const Footer = () => {
             >
                 <Email width='20' svgFill={isDark ? colors.light : colors.night} />
                 <span className={`text-xs ${isDark ? "text-light" : "text-night"}`}>Email</span>
+                <ExternalIcon width='14' svgFill={isDark ? colors.light : colors.night} />
+            </a>
+            <a
+                className='opacity-80 hover:opacity-100 transition flex items-center gap-1'
+                target='_blank'
+                rel='noreferrer noopener'
+                href='https://www.linkedin.com/in/vivian-obiako/'
+            >
+                <LinkedInIcon width='20' svgFill={isDark ? colors.light : colors.night} />
+                <span className={`text-xs ${isDark ? "text-light" : "text-night"}`}>LinkedIn</span>
                 <ExternalIcon width='14' svgFill={isDark ? colors.light : colors.night} />
             </a>
             </div>

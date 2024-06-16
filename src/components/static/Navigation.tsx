@@ -13,7 +13,7 @@ const Navigation = () => {
           isActive={activeSection === "section1"}
           isDark={isDark}
           count={0}
-          name='Works'
+          name='Highlights'
           path='#section1'
         />
         <NavItem
@@ -22,6 +22,13 @@ const Navigation = () => {
           count={1}
           name='Experience'
           path='#section2'
+        />
+        <NavItem
+          isActive={activeSection === "section3"}
+          isDark={isDark}
+          count={2}
+          name='Work'
+          path='#section3'
         />
        
       </ul>
