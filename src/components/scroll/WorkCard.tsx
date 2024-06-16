@@ -7,12 +7,15 @@ import Seperator from "./Seperator";
 const WorkCard = ({
   isDark = true,
   icon = <Briefcase svgFill={isDark ? colors.light : colors.night} />,
+  isLast = false,
 }: {
   isDark?: boolean;
   icon?: ReactNode;
+  isLast?: boolean;
 }) => {
   return (
     <div className="custom-transition md:group-hover:opacity-50 md:hover:!opacity-100">
+      {isLast && <Seperator last={true} />}
       <article className='my-0 flex items-center gap-5 custom-transition  [&>*:first-child]:md:hover:!scale-[1.1]'>
         <div
           className={`flex items-center justify-center flex-none transition rounded-full w-20 h-20 lg:w-24 lg:h-24 ${
@@ -39,7 +42,7 @@ const WorkCard = ({
           </time>
         </div>
       </article>
-      <Seperator />
+      {!isLast && <Seperator />}
     </div>
   );
 };

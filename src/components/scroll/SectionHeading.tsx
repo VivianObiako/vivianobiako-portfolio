@@ -18,7 +18,7 @@ const SectionHeading = ({ children, title, id, className = "", isDark }: Props) 
       } `}
     >
       <h3
-        className={`title md:text-neutral sticky md:relative top-[10px] py-3 z-50 text-sm font-semibold uppercase ${
+        className={`title md:text-neutral sticky md:relative top-[10px] py-3 z-50 w-fit text-sm font-semibold uppercase ${
           isDark ? "text-grey" : "text-gray"
         }`}
       >

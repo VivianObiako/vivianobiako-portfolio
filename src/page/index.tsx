@@ -6,14 +6,14 @@ const Main = () => {
     const { isDark } = useThemeContext();
 
     return (
-        <main>
+    <main>
         <div className={`h-screen w-screen fixed top-0 left-0 ${isDark ? "bg-night" : "bg-light"}`}/>
         <div className='min-h-screen hide-scroll w-screen relative grid hide-scroll z-[2]'>
             <Static />
             <Scroll />
         </div>
-        </main>
-    );
+    </main>
+  );
 };
 
 export default Main;

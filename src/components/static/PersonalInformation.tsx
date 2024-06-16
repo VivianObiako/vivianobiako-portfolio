@@ -1,3 +1,4 @@
+import { CVDownload } from "components/scroll/CVDownload";
 import { useThemeContext } from "context/useThemeContext";
 
 const PersonalInformation = () => {
@@ -39,6 +40,7 @@ const PersonalInformation = () => {
         </p>
         <p></p>
       </div>
+      <CVDownload />
     </div>
   );
 };

@@ -27,7 +27,7 @@ const Navigation = () => {
           isActive={activeSection === "section3"}
           isDark={isDark}
           count={2}
-          name='Work'
+          name='Projects'
           path='#section3'
         />
        

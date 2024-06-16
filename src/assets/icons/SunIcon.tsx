@@ -1,7 +1,7 @@
 import { CustomIconProps } from "utils/types/models";
 
 export default function SunIcon({
-    svgFill = "#000000",
+    svgFill = "#949495",
     pathFill = "none",
     width = "24",
     height = "24",

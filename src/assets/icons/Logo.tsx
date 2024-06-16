@@ -1,8 +1,7 @@
-import { Icon, IconProps } from '@chakra-ui/react';
 
-const Logo: React.FC<IconProps> = (props) => {
+const Logo = () => {
   return (
-    <Icon version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" viewBox="0 0 1060 1062" enable-background="new 0 0 1060 1062" xmlSpace="preserve" {...props} >
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" viewBox="0 0 1060 1062" enable-background="new 0 0 1060 1062" xmlSpace="preserve" >
       <path fill="#242424" opacity="1.000000" stroke="none" d="
 	M619.000000,1063.000000 
 		C412.690857,1063.000000 206.881699,1063.000000 1.036272,1063.000000 
@@ -125,7 +124,7 @@ const Logo: React.FC<IconProps> = (props) => {
 		C705.588257,431.506531 706.359009,431.703766 707.776367,431.897736 
 		C680.468872,479.217987 653.432434,526.068481 626.229126,573.245972 
 	z"/>
-    </Icon>
+    </svg>
   )
 }
 
