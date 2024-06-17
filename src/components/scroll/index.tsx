@@ -6,6 +6,7 @@ import SecondaryCard from "./SecondaryCard";
 import WorkCard from "./WorkCard";
 import { ThemeChange } from "./ThemeChange";
 import { CVDownload } from "./CVDownload";
+import { experiences, highlights, projects } from "utils/constants/data";
 
 const Scroll = () => {
     const activeSection = useScroll();
@@ -40,24 +41,23 @@ const Scroll = () => {
         <div className='scrolling-section hide-scroll focus-visible:outline-none flex flex-col gap-0 justify-between px-5 sm:px-10 pb-20 lg:pb-[90px] lg:pt-0 xl:pr-[90px] xl:pl-10 md:w-1/2 md:justify-self-end'>
             <SectionHeading isDark={isDark} id='section1' className='section1' title='Highlights'>
                 <div className='group pb-20 md:pb-0'>
-                    <MainCard isDark={isDark} />
-                    <MainCard isDark={isDark} />
+                    {highlights && highlights.map((highlight, index)=>(
+                        <MainCard isDark={isDark} key={index} data={highlight} />
+                    ))}
                 </div>
             </SectionHeading>
             <SectionHeading isDark={isDark} id='section2' className='section2' title='Experience'>
                 <div className='group pb-20 md:pb-0 py-8 '>
-                    <WorkCard isDark={isDark} />
-                    <WorkCard isDark={isDark} isLast={true} />
+                    {experiences && experiences.map((experience)=>(
+                        <WorkCard isDark={isDark} key={experience.index} data={experience} isLast={experience.last || false} />
+                    ))}
                 </div>
             </SectionHeading>
             <SectionHeading isDark={isDark} id='section3' className='section3' title='Projects'>
                 <div className='group grid lg:mt-[35px] lg:grid-cols-2 gap-x-[9px] pb-20 md:pb-0'>
-                    <SecondaryCard isDark={isDark} />
-                    <SecondaryCard isDark={isDark} />
-                    <SecondaryCard isDark={isDark} />
-                    <SecondaryCard isDark={isDark} />
-                    <SecondaryCard isDark={isDark} />
-                    <SecondaryCard isDark={isDark} />
+                    {projects && projects.map((project, index)=>(
+                        <SecondaryCard isDark={isDark} key={index} data={project} />
+                    ))}
                 </div>
             </SectionHeading>
         </div>

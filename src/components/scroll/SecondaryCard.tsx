@@ -1,5 +1,6 @@
+import { project } from "utils/types/models";
 
-const SecondaryCard = ({ isDark = true }: { isDark?: boolean }) => {
+const SecondaryCard = ({ isDark = true, data }: { isDark?: boolean, data: project }) => {
   return (
     <article
       className={`mt-[9px] secondary-card w-full lg:odd:-translate-y-[35px] custom-transition md:group-hover:opacity-50 md:hover:!opacity-100 md:hover:!scale-[1.1] ${
@@ -8,7 +9,7 @@ const SecondaryCard = ({ isDark = true }: { isDark?: boolean }) => {
     >
       <a
         className='block p-10'
-        href='https://github.com/dinerojs/dinero.js'
+        href={data.link}
         target='_blank'
         rel='noopener noreferrer'
       >
@@ -17,18 +18,18 @@ const SecondaryCard = ({ isDark = true }: { isDark?: boolean }) => {
             isDark ? "text-white-200" : "text-black-200"
           }`}
         >
-          Merck
+          {data.name}
         </h3>
         <small
           className={`mt-1 text-xs text-neutral opacity-70 inline-block ${
             isDark ? "text-white-200" : "text-black-200"
           }`}
         >
-          NextJS, TS, Tailwind, Viem
+          {data.tools}
         </small>
         
         <p className='mt-3 text-neutral text-xs'>
-          Create, calculate, and format money in JavaScript and TypeScript.
+          {data.description}
         </p>
         
       </a>

@@ -3,15 +3,18 @@ import { ReactNode } from "react";
 import Briefcase from "assets/icons/Briefcase";
 import { colors } from "utils/constants/colors";
 import Seperator from "./Seperator";
+import { experience } from "utils/types/models";
 
 const WorkCard = ({
   isDark = true,
   icon = <Briefcase svgFill={isDark ? colors.light : colors.night} />,
   isLast = false,
+  data
 }: {
   isDark?: boolean;
   icon?: ReactNode;
   isLast?: boolean;
+  data: experience;
 }) => {
   return (
     <div className="custom-transition md:group-hover:opacity-50 md:hover:!opacity-100">
@@ -30,15 +33,15 @@ const WorkCard = ({
               isDark ? "text-white-200" : "text-black-200"
             }`}
           >
-            First City Monument Bank
+            {data.place}
           </h3>
-          <p className='mt-2 mb-2 text-neutral text-sm tracking-wide'>Software Engineer</p>
+          <p className='mt-2 mb-2 text-neutral text-sm tracking-wide'>{data.title}</p>
           <time
             className={`inline-block mt-2 text-xs font-medium tracking-widest uppercase opacity-85 ${
               isDark ? "text-white-200" : "text-black-200"
             }`}
           >
-            June 29, 2021 - June 29, 2021
+            {data.timeframe}
           </time>
         </div>
       </article>
