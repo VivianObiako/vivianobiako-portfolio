@@ -49,11 +49,11 @@ const Scroll = () => {
             <SectionHeading isDark={isDark} id='section2' className='section2' title='Experience'>
                 <div className='group pb-20 md:pb-0 py-8 '>
                     {experiences && experiences.map((experience)=>(
-                        <WorkCard isDark={isDark} key={experience.index} data={experience} isLast={experience.last || false} />
+                            <WorkCard isDark={isDark} key={experience.index} data={experience} />
                     ))}
                 </div>
             </SectionHeading>
-            <SectionHeading isDark={isDark} id='section3' className='section3' title='Projects'>
+            <SectionHeading isDark={isDark} id='section3' className='section3' title='Other Projects'>
                 <div className='group grid lg:mt-[35px] lg:grid-cols-2 gap-x-[9px] pb-20 md:pb-0'>
                     {projects && projects.map((project, index)=>(
                         <SecondaryCard isDark={isDark} key={index} data={project} />

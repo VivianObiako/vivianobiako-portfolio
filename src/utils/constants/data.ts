@@ -3,16 +3,23 @@ import { Highlight, experience, project } from "utils/types/models"
 export const highlights : Highlight[] = [
     {
         language: "Typescript",
+        title: "FCMB Public Offer",
+        description: "The FCMB Public Offer website promotes investing in FCMB shares, offering benefits like discounted prices and potential growth. It provides a step-by-step guide for purchasing shares.",
+        tools: "NEXTJS, TS, CHAKRA UI, TAILWIND, CRYPTOJS",
+        link: "#",
+    },
+    {
+        language: "Typescript",
         title: "Amaka Studio",
         description: "A social publishing platform empowering Pan-African creators to reach a global audience and earn through subscriptions, events and more.",
-        tools: "REACT, TS, TAILWIND",
+        tools: "REACT, TS, TAILWIND, CRYPTOJS",
         link: "https://amaka.studio/",
     },
     {
         language: "JavaScript",
         title: "FERN",
         description: "A payment gateway, where merchants can conveniently accept payments, control finances, and track transactions",
-        tools: "REACT, JS, MATERIAL UI",
+        tools: "REACT, JS, MATERIAL UI, WEBPACK, REDUX, CRYPTOJS, SIGNALR",
         link: "https://fernng.com/",
     }
 ];
