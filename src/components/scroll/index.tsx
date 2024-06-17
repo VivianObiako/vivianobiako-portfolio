@@ -53,7 +53,7 @@ const Scroll = () => {
                     ))}
                 </div>
             </SectionHeading>
-            <SectionHeading isDark={isDark} id='section3' className='section3' title='Other Projects'>
+            <SectionHeading isDark={isDark} id='section3' className='section3' title='Projects'>
                 <div className='group grid lg:mt-[35px] lg:grid-cols-2 gap-x-[9px] pb-20 md:pb-0'>
                     {projects && projects.map((project, index)=>(
                         <SecondaryCard isDark={isDark} key={index} data={project} />
