@@ -6,7 +6,7 @@ export const highlights : Highlight[] = [
         title: "FCMB Public Offer",
         description: "The FCMB Public Offer website promotes investing in FCMB shares, offering benefits like discounted prices and potential growth. It provides a step-by-step guide for purchasing shares.",
         tools: "NEXTJS, TS, CHAKRA UI, TAILWIND, CRYPTOJS",
-        link: "#",
+        link: "https://5rcgqdzkh3.eu-west-1.awsapprunner.com/",
     },
     {
         language: "Typescript",
