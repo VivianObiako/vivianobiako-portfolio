@@ -3,10 +3,17 @@ import { Highlight, experience, project } from "utils/types/models"
 export const highlights : Highlight[] = [
     {
         language: "Typescript",
-        title: "FCMB Public Offer",
-        description: "The FCMB Public Offer website promotes investing in FCMB shares, offering benefits like discounted prices and potential growth. It provides a step-by-step guide for purchasing shares.",
-        tools: "NEXTJS, TS, CHAKRA UI, TAILWIND, CRYPTOJS",
-        link: "https://5rcgqdzkh3.eu-west-1.awsapprunner.com/",
+        title: "Peppermint",
+        description: "A platform that streamlines learning from your users, recruit testers, run usability tests and user interviews and get in insights in hours not weeks.",
+        tools: "NEXTJS, TS, CHAKRA UI, TAILWIND, REST API",
+        link: "https://www.runpeppermint.com/",
+    },
+    {
+        language: "JavaScript",
+        title: "Glow Beauty",
+        description: "A skincare website that has a modern and clean design with animations",
+        tools: "REACT, JS, GSAP, TAILWIND",
+        link: "https://glow-beauty.netlify.app/",
     },
     {
         language: "Typescript",
@@ -60,6 +67,18 @@ export const experiences : experience[] = [
 ];
 
 export const projects : project[] = [
+    {
+        name: "Data-I",
+        tools: "NEXTJS, TS, TAILWIND, REST API",
+        description: "A comprehensive data-driven platform that provides insights and solutions to address Africa's most pressing challenges.",
+        link: "https://datainitiative.africa/",
+    },
+    {
+        name: "FCMB Public Offer",
+        description: "The FCMB Public Offer website promotes investing in FCMB shares, offering benefits like discounted prices and potential growth. It provides a step-by-step guide for purchasing shares.",
+        tools: "NEXTJS, TS, CHAKRA UI, TAILWIND, CRYPTOJS",
+        link: "https://publicoffer.fcmb.com/",
+    },
     {
         name: "Gro",
         tools: "REACT, JS, MATERIAL UI, REDUX",
