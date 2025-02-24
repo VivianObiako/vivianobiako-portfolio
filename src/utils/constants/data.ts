@@ -9,11 +9,11 @@ export const highlights : Highlight[] = [
         link: "https://www.runpeppermint.com/",
     },
     {
-        language: "JavaScript",
-        title: "Glow Beauty",
-        description: "A skincare website that has a modern and clean design with animations",
-        tools: "REACT, JS, GSAP, TAILWIND",
-        link: "https://glow-beauty.netlify.app/",
+        language: "Typescript",
+        title: "Tife Wellness",
+        description: "A wellness company website that has a modern and clean design with animations",
+        tools: "REACT, JS, Framer Motion, TAILWIND",
+        link: "https://www.tifewellness.com/",
     },
     {
         language: "Typescript",
