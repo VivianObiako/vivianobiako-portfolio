@@ -23,12 +23,13 @@ export const highlights : Highlight[] = [
         link: "https://amaka.studio/",
     },
     {
-        language: "JavaScript",
-        title: "FERN",
-        description: "A payment gateway, where merchants can conveniently accept payments, control finances, and track transactions",
-        tools: "REACT, JS, MATERIAL UI, WEBPACK, REDUX, CRYPTOJS, SIGNALR",
-        link: "https://fernng.com/",
-    }
+        language: "Typescript",
+        title: "FCMB Public Offer",
+        description: "The FCMB Public Offer website promotes investing in FCMB shares, offering benefits like discounted prices and potential growth. It provides a step-by-step guide for purchasing shares.",
+        tools: "NEXTJS, TS, CHAKRA UI, TAILWIND, CRYPTOJS",
+        link: "https://publicoffer.fcmb.com/",
+    },
+
 ];
 
 export const experiences : experience[] = [
@@ -74,11 +75,11 @@ export const projects : project[] = [
         link: "https://datainitiative.africa/",
     },
     {
-        name: "FCMB Public Offer",
-        description: "The FCMB Public Offer website promotes investing in FCMB shares, offering benefits like discounted prices and potential growth. It provides a step-by-step guide for purchasing shares.",
-        tools: "NEXTJS, TS, CHAKRA UI, TAILWIND, CRYPTOJS",
-        link: "https://publicoffer.fcmb.com/",
-    },
+        name: "FERN",
+        description: "A payment gateway, where merchants can conveniently accept payments, control finances, and track transactions",
+        tools: "REACT, JS, MATERIAL UI, WEBPACK, REDUX, CRYPTOJS, SIGNALR",
+        link: "https://fernng.com/",
+    },  
     {
         name: "Gro",
         tools: "REACT, JS, MATERIAL UI, REDUX",
