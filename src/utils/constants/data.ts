@@ -10,13 +10,6 @@ export const highlights : Highlight[] = [
     },
     {
         language: "Typescript",
-        title: "Tife Wellness",
-        description: "A wellness company website that has a modern and clean design with animations",
-        tools: "REACT, JS, Framer Motion, TAILWIND",
-        link: "https://www.tifewellness.com/",
-    },
-    {
-        language: "Typescript",
         title: "Amaka Studio",
         description: "A social publishing platform empowering Pan-African creators to reach a global audience and earn through subscriptions, events and more.",
         tools: "REACT, TS, TAILWIND, CRYPTOJS",
@@ -24,10 +17,17 @@ export const highlights : Highlight[] = [
     },
     {
         language: "Typescript",
-        title: "FCMB Public Offer",
-        description: "The FCMB Public Offer website promotes investing in FCMB shares, offering benefits like discounted prices and potential growth. It provides a step-by-step guide for purchasing shares.",
+        title: "Tife Wellness",
+        description: "A wellness company website that has a modern and clean design with animations",
+        tools: "REACT, JS, Framer Motion, TAILWIND",
+        link: "https://www.tifewellness.com/",
+    },
+    {
+        language: "Typescript",
+        title: "Gro",
+        description: "A platform that automates your investments and savings and earn 3.5% to 13% interest on your naira and dollar.",
         tools: "NEXTJS, TS, CHAKRA UI, TAILWIND, CRYPTOJS",
-        link: "https://publicoffer.fcmb.com/",
+        link: "https://www.investwithgro.com/",
     },
 
 ];
@@ -39,12 +39,12 @@ export const experiences : experience[] = [
         title: "Frontend Engineer",
         timeframe: "SEPT 2021 - PRESENT",
     },
-    {
-        index: 2,
-        place: "Amaka Studio, London, UK",
-        title: "Frontend Engineer (Contract)",
-        timeframe: "APR 2023 - OCT 2023",
-    },
+    // {
+    //     index: 2,
+    //     place: "Amaka Studio, London, UK",
+    //     title: "Frontend Engineer (Contract)",
+    //     timeframe: "APR 2023 - OCT 2023",
+    // },
     {
         index: 3,
         place: "Vertex Software Corp, Texas, USA",
